@@ -3,6 +3,15 @@ alert("Bienvenidos a la calculadora!")
 
 // Calculadora
 
+let nombre = prompt("Por favor ingresu su nombre")
+let edad = parseInt(prompt(" Por favor ingrese su edad "))
+
+const datos = [nombre, edad]
+
+alert(" BIENVENIDO/A " + nombre )
+
+console.log(datos)
+ 
 function Calculadora(primerNumero, segundoNumero, tercerNumero, operacion){
     switch(operacion){
         case '+':
@@ -10,9 +19,11 @@ function Calculadora(primerNumero, segundoNumero, tercerNumero, operacion){
         case '-':
             return primerNumero - segundoNumero - tercerNumero
         case '*':
-            return primerNumero * segundoNumero * tercerNumero    
+            return primerNumero * segundoNumero * tercerNumero       
+        case '/':
+            return (primerNumero) / (segundoNumero) / (tercerNumero) 
         default:
-            return 0    
+            return 0         
     }   
 }    
 
@@ -34,3 +45,7 @@ if( resultado < 100) {
 } else {
     alert( "El precio es mayor a 100")
 }
+
+
+
+
